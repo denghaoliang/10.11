@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.box {
+  display: flex;
+  flex-flow: row nowrap; }
+  .box div {
+    background: gray;
+    margin: 5px;
+    height: 30px; }
+    .box div:nth-child(1) {
+      width: 200px; }
+    .box div:nth-child(2) {
+      flex: 1; }
+    .box div:nth-child(3) {
+      flex: 1; }
+
+/*# sourceMappingURL=fiex.css.map */
