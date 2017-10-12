@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:26px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  color: #59595d;
+}
+
+@font-face {
+font-family: 'iconfont';
+src: url('../fonta/iconfont.eot');
+src: url('../fonta/iconfont.eot?#iefix') format('embedded-opentype'),
+url('../fonta/iconfont.woff') format('woff'),
+url('../fonta/iconfont.ttf') format('truetype'),
+url('../fonta/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+font-family:"iconfont" !important;
+font-size:26px;font-style:normal;
+-webkit-font-smoothing: antialiased;
+-webkit-text-stroke-width: 0.2px;
+-moz-osx-font-smoothing: grayscale;
+}
+
+
+%txhz{
+    background: lightblue;
+    width: 100%;
+    height:50px;
+}
+*{padding: 0;margin: 0;}
+html{
+    width: 100%;
+    height: 100%;
+    body{
+        @extend html;
+        .box{
+            @extend html;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            @extend %txhz; //继承txhz样式
+            ul{
+                display: flex;
+                @extend html;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            
+            li{
+                flex: 1;
+               &:nth-child(1){flex: 3;}  //li中的第一个
+            }
+            
+        }
+        section{
+            @extend html;
+            overflow-y:auto;
+            flex: 1;
+        }
+        ul{
+            list-style: none;
+        }
+        
+        footer{
+        @extend %txhz;
+           ul{
+               @extend html;
+               display: flex;
+           }
+           li{
+               flex: 1;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               
+               span{
+                   display: block;
+                   flex: 1;
+               }
+           }
+      
+        }
+      
+    
+    }
+
+
+}
+

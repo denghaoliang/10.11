@@ -1,0 +1,20 @@
+html body header, html body footer {
+  background: lightblue;
+  width: 100%;
+  height: 50px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html, html body, html body section {
+  width: 100%;
+  height: 100%; }
+  html body, html body section body {
+    display: flex;
+    flex-direction: column; }
+    html body section {
+      overflow-y: auto; }
+
+/*# sourceMappingURL=t.css.map */
